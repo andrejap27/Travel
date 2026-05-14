@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore World | Avantura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigacija -->
+    <nav class="navbar">
+        <div class="logo">EXPLORE WORLD</div>
+        <ul class="nav-links">
+            <li><a href="#home">Početna</a></li>
+            <li><a href="#destinacije">Destinacije</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Početna (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>DOŽIVI NEZABORAVNU AVANTURU</h1>
+        </div>
+    </section>
+
+    <!-- Destinacije -->
+    <section id="destinacije" class="destinations">
+        <h2 class="section-title">Popularne Destinacije</h2>
+        <div class="grid">
+            <!-- Kartica 1 -->
+            <div class="card">
+                <img src="Slike/newYork.jpg" alt="Tara">
+                <div class="card-body">
+                    <h3>New York</h3>
+                    <p>Doživite energiju grada koji nikada ne spava i prošetajte Central Parkom.</p>
+                    <span class="price">1200e</span>
+                   <a href="NewYork.html" class="btn" style="text-decoration: none; display: inline-block;">Detaljnije</a>
+                </div>
+            </div>
+            <!-- Kartica 2 -->
+            <div class="card">
+                <img src="Slike/barca.jpg" alt="Barcelona">
+                <div class="card-body">
+                    <h3>Barcelona</h3>
+                    <p>Uživajte u arhitekturi Gaudija, peščanim plažama i najboljim tapasima.</p>
+                    <span class="price">750e</span>
+                 <a href="barcelona.html" class="btn" style="text-decoration: none; display: inline-block;">Detaljnije</a>
+                </div>
+            </div>
+        </div> <br><br>
+         <!-- Kartica 3 -->
+            <div class="card" onclick="otvoriTurun('kopaonik')">
+                <img src="Slike/trms.jpg" alt="Tromso">
+                <div class="card-body">
+                    <h3>Tromso</h3>
+                    <p>Lov na polarnu svetlost i nezaboravne vožnje psećim zapregama na severu.</p>
+                    <span class="price">1099e</span>
+                    <a href="Tromso.html" class="btn" style="text-decoration: none; display: inline-block;">Detaljnije</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="contact">
+        <div class="contact-card">
+            <h2>Kontaktirajte nas</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Vaše ime" required>
+                <input type="email" placeholder="Vaš Email" required>
+                <textarea placeholder="Vaša poruka" rows="5"></textarea>
+                <button type="submit" class="btn">Pošalji upit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
