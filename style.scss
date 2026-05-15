@@ -13,7 +13,7 @@ body {
     scroll-behavior: smooth;
 }
 
-// Navigacija
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -32,7 +32,7 @@ body {
     }
 }
 
-// Hero Sekcija
+
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), 
@@ -49,7 +49,7 @@ body {
     }
 }
 
-// Kartice
+
 .destinations {
     padding: 100px 10%;
     background: #f4f4f4;
@@ -81,7 +81,7 @@ body {
     }
 }
 
-// Kontakt Forma
+
 .contact {
     padding: 100px 10%;
     display: flex;
@@ -125,12 +125,12 @@ body {
     text-align: center;
     position: relative;
     
-    // Ovaj deo osigurava da tekst uvek bude čitljiv preko slike
+   
     &::after {
         content: '';
         position: absolute;
         top: 0; left: 0; width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.4); // Zatamnjenje slike
+        background: rgba(0, 0, 0, 0.4);
         z-index: 1;
     }
 
@@ -139,7 +139,7 @@ body {
         z-index: 2;
         h1 {
             color: #ffffff;
-            font-size: clamp(2rem, 5vw, 4rem); // Prilagodljiva veličina slova
+            font-size: clamp(2rem, 5vw, 4rem); 
             text-transform: uppercase;
             letter-spacing: 3px;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -168,7 +168,7 @@ body {
     }
 }
 
-// Stil za tabelu sa planom puta
+
 .tour-plan {
     h2 {
         color: #2c3e50;
@@ -219,13 +219,13 @@ body {
     }
 }
 
-// Responzivnost za mobilne telefone
+
 @media (max-width: 768px) {
     .destination-details {
         padding: 40px 5%;
     }
     .tour-table {
         display: block;
-        overflow-x: auto; // Dozvoljava skrolovanje tabele na malim ekranima
+        overflow-x: auto;
     }
 }
